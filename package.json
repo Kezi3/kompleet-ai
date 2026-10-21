@@ -1,0 +1,27 @@
+{
+  "name": "kompleet-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-provider LLM transaction categorisation with fallback, plus receipt OCR (TypeScript)",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
+    "openai": "^6.21.0",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  }
+}
